@@ -3,24 +3,24 @@
 #include <string> 
 using namespace std;  
 
-double input_real_number(string variable_name) {  
+double input_real_number(char variable_name) {  
     cin.clear();
     double real_number;
-    printf("Enter %s : ", variable_name.c_str()); 
+    printf("Enter %c : ", variable_name); 
     while(!(cin >> real_number))
     {
         cin.clear();
         cout << "Invalid input. Try again! Variable should be a real number. \n"; 
-        printf("Enter %s : ", variable_name.c_str()); 
+        printf("Enter %c : ", variable_name); 
     }
     return real_number; 
 }
 
     void user_interface() 
     { 
-        double a = input_real_number("A"); 
-        double b = input_real_number("B"); 
-        double c = input_real_number("C");    
+        double a = input_real_number('A'); 
+        double b = input_real_number('B'); 
+        double c = input_real_number('C');    
 
         Solution solution = {a, b, c}; 
 
