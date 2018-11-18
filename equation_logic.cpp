@@ -4,19 +4,6 @@
 #include "equation_logic.h" 
 using namespace std;  
 
-
-struct Solution 
-{ 
-    double a; 
-    double b; 
-    double c; 
-    double real_part_of_root;
-    double discriminant; 
-    double discriminant_part; 
-    double real_root1; 
-    double real_root2;
-    double root_of_linear_eqution;
-
     void Solution::solve() 
     {
         real_part_of_root = find_real_part_of_root();  
@@ -52,5 +39,5 @@ struct Solution
     { 
         return sqrt(abs(discriminant))/(2*a);
     }
-};
+
 
