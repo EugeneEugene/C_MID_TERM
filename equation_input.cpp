@@ -1,6 +1,7 @@
 #include <iostream> 
 #include <math.h>   
-#include <string> 
+#include <string>  
+#include "equation_logic.h" 
 using namespace std;  
 
 double input_real_number(char variable_name) {  
@@ -22,7 +23,7 @@ double input_real_number(char variable_name) {
         double b = input_real_number('B'); 
         double c = input_real_number('C');    
 
-        Solution solution = {a, b, c}; 
+        Solution::solution = {a, b, c}; 
 
         solution.solve();
         
